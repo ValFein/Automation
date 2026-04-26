@@ -1,0 +1,11 @@
+stages:
+  - unit_test
+test_job:
+  stage: unit_test
+  script:
+    - echo "Running unit tests..."
+    - pip install pytest
+    - pytest tests/
+  only:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+#    - merge_requests
