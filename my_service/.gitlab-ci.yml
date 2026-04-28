@@ -3,7 +3,7 @@ stages:
 test_job:
   stage: unit_test
   script:
-    - echo "Running unit tests..."
+    - echo "Running unit tests with pyTest ..."
     - pip install pytest
     - pytest tests/
   only:
