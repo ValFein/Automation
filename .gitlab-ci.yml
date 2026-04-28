@@ -5,7 +5,7 @@ test_job:
   script:
     - echo "Running unit tests with pyTest ..."
     - pip install pytest
-    - pytest tests/
+    - pytest ./my_service/calculator_test.py
   rules:
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
 #    - merge_requests
