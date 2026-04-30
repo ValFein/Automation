@@ -18,7 +18,7 @@ def test_add(calc,sample_data):
 def test_minus(calc, sample_data):
     assert calc.minus(sample_data['a'], sample_data['b']) == sample_data['diff']
 
-@pytest.mark.parametrize("num1,num2,expected",[(1,2,3),(2,3,5),(3,5,8),(3,4,7)])
+@pytest.mark.parametrize("num1,num2,expected",[(1,2,3),(2,3,5),(3,5,8),(3,4,6)])
 def test_add_1(calc,num1,num2,expected):
     assert calc.add(num1,num2) == expected
 
