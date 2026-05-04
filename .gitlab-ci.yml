@@ -3,7 +3,7 @@ stages:
 test_job:
   stage: unit_test
   script:
-    - echo "Runnnnnning unit xxxxxtests with pyTest ..."
+    - echo "Runnnnnning unit YYYYYYYYYYYY with pyTest ..."
     - pip install pytest
     - pytest ./my_service/calculator_test.py
   rules:
