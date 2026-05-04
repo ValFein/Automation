@@ -8,7 +8,7 @@ def sample_data():
 
 @pytest.fixture
 def calc():
-    return Calculator('simple calculator')
+    return Calculator('simplee calculator')
 
 
 def test_add(calc,sample_data):
