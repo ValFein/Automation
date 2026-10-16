@@ -1,17 +1,16 @@
 class Calculator:
-
-    def __init__(self, name='basicCalculator'):
+    def __init__(self, name = 'basic'):
         self.name = name
 
+    def add (self, a, b):
+        return a+b
 
-    def add(self, num1, num2):
-        print(f'first number is{num1}, secode number is {num2}')
-        return num1 + num2
+    def subtract (self, a, b):
+        return a-b
 
-    def minus(self, num1, num2):
-        print(f'first number is{num1}, second number is {num2}')
-        return num1 - num2
+    def divide (self, a, b):
+        if b == 0:
+            raise ValueError("Cannot divide by zero")
+        return a/b
 
-    def divide(self, num1, num2):
-        print(f'first number is{num1}, second number is {num2}')
-        return num1 / num2
+
